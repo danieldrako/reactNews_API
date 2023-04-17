@@ -1,10 +1,12 @@
 import { Container, Grid, Typography } from "@mui/material"
 import Formulario from "./components/Formulario"
+import { NoticiasProvider } from "./context/NoticiasProvider"
 
 function App() {
   
   return (
-    <Container  style={{ 
+    <NoticiasProvider>
+      <Container  style={{ 
         background: "linear-gradient(45deg, rgba(11,32,149,0.9556197478991597) 8%, rgba(7,50,172,1) 26%, rgba(0,159,255,1) 100%)", 
         padding: '4rem',
         boxShadow: "2px -8px 35px 22px rgba(0,0,0,0.53)",
@@ -31,7 +33,9 @@ function App() {
       </Grid>
 
 
-    </Container>
+      </Container>
+    </NoticiasProvider>
+
   )
 }
 
