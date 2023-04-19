@@ -17,7 +17,6 @@ const NoticiasProvider = ({children})=> {
             
             setNoticias(data.articles)
             setTotalNoticias(data.totalResults)
-            console.log(data.totalResults)
          }
          consultarApi()
      },[categoria])
@@ -31,7 +30,8 @@ const NoticiasProvider = ({children})=> {
             value={{
                 categoria,
                 handleChangeCategoria,
-                noticias
+                noticias,
+                totalNoticias
             }}
         >
             {children}
