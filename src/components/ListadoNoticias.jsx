@@ -5,7 +5,7 @@ import Noticia from "./Noticia"
 import { Pagination, Stack } from "@mui/material"
 
 const ListadoNoticias = () => {
-    const {noticias, totalNoticias} = useNoticias()
+    const {noticias, totalNoticias, handleChangePagina, pagina} = useNoticias()
 
     console.log(totalNoticias)
     const totalPaginas = Math.ceil(totalNoticias /20)
@@ -49,6 +49,8 @@ const ListadoNoticias = () => {
             <Pagination 
                 count={totalPaginas}
                 color="secondary"
+                onChange={handleChangePagina}
+                page={pagina}
             />
         </Stack>
     </>
