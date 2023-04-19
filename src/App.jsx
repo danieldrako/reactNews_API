@@ -12,7 +12,9 @@ function App() {
         padding: '4rem',
         boxShadow: "2px -8px 35px 22px rgba(0,0,0,0.53)",
         borderRadius: "7% 93% 6% 94% / 91% 10% 90% 9% ",
-        marginTop: '2rem' }} >
+        marginTop: '2rem',
+        marginBottom:'2rem',
+        paddingBottom:'10rem' }} >
       <header >
         <Typography align='center' marginY={5} component="h1" variant="h3">
           Buscador de Noticias
