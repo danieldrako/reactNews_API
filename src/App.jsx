@@ -11,10 +11,10 @@ function App() {
         background: "linear-gradient(45deg, rgba(11,32,149,0.9556197478991597) 8%, rgba(7,50,172,1) 26%, rgba(0,159,255,1) 100%)", 
         padding: '4rem',
         boxShadow: "2px -8px 35px 22px rgba(0,0,0,0.53)",
-        borderRadius: "7% 93% 6% 94% / 91% 10% 90% 9% ",
+        borderRadius: "100% 0% 100% 0% / 5% 97% 4% 95%  ",
         marginTop: '2rem',
         marginBottom:'2rem',
-        paddingBottom:'10rem' }} >
+        paddingBottom:'10rem'}} >
       <header >
         <Typography align='center' marginY={5} component="h1" variant="h3">
           Buscador de Noticias
